@@ -1,0 +1,13 @@
+{
+  "name": "angular1seed",
+  "description": "angular app ui",
+  "main": "index.js",
+  "authors": [
+    "Appi"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "angular": "^1.5.8"
+  }
+}
