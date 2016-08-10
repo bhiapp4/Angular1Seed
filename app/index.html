@@ -1,10 +1,13 @@
-<head>
-    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
-</head>
-<body ng-app="SeedApp">
-    <h1>Angular Seed Application</h1>
-    <div ng-controller="seedController">
-        {{value}}
-    </div>    
-    <script src="app.js"></script>
-</body>
+<html>
+    <head>
+        <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+        <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body ng-app="SeedApp">
+        <h1>Angular Seed Application</h1>
+        <a ui-sref="page1">Page 1</a>
+        <a ui-sref="page2">Page 2</a>
+        <div ui-view></div>
+    </body>
+</html>
