@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script type="text/javascript" src="bower_components/angular/angular.js"></script>
-        <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-        <script src="app.js"></script>
-        <link rel="stylesheet" href="bower_components/bootswatch-dist/css/bootstrap.min.css">
-    </head>
-    <body ng-app="SeedApp">
-       <nav class="navbar navbar-default">
-          <div class="container-fluid">
+
+<head>
+    <link rel="stylesheet" href="bower_components/bootswatch-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/angular-bootstrap/ui-bootstrap-csp.css">
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="bower_components/angular-resource/angular-resource.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src='bower_components/ngMask/dist/ngMask.min.js'></script>
+    <script src="app.js"></script>
+    <script src="routes.js"></script>
+</head>
+
+<body ng-app="SeedApp">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
             <div class="navbar-header">
-              <a class="navbar-brand" ui-sref="page1">Angular Seed Application</a>
+                <a class="navbar-brand" ui-sref="page2">Angular Seed Application Demo</a>
             </div>
-          </div>
-        </nav>
-        <div class="container">
-            <ul class="nav nav-pills">
-                <li ui-sref-active="active">
-                    <a ui-sref="page1">Page 1</a>
-                </li>
-                <li ui-sref-active="active">
-                    <a ui-sref="page2">Page 2</a>
-                </li> 
-            </ul>
-            <div ui-view></div>  
-        </div>       
-    </body>
+        </div>
+    </nav>
+    <div class="container">
+        <ul class="nav nav-pills">
+            <li ui-sref-active="active">
+                <a ui-sref="page1">Page 1</a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="page2">Page 2</a>
+            </li>
+        </ul>
+        <div ui-view></div>
+    </div>
+</body>
+
 </html>
