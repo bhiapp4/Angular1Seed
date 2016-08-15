@@ -1,3 +1,3 @@
-app.service('Page2Service', function ($http) {
+app.service('Page2Service', ['$http', function ($http) {
 
-});
+}]);
